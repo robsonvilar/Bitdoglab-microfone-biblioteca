@@ -5,8 +5,7 @@ o uso do sensor de som da placa bitdoglab. Ela possui
 apenas 2 funções. Uma função que retorna o sinal de tensão do sensor 
 e outra que retorna uma média dos dados captados pelo sensor.
 
-- Abaixo se encontra todo o código comentado. Em caso de dúvidas enviar um 
-email para alves.robson@academico.ifpb.edu.br
+- Abaixo encontra-se todo o código comentado.
 
 ## Arquivo de testes main.c da biblioteca
 

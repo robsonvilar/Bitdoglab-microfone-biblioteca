@@ -1,11 +1,9 @@
 - Comandos para atualizar repositorio
 git init
 git add .
-<<<<<<< HEAD
-git commit -m "add 024"
-=======
-git commit -m "add 023"
->>>>>>> d8c613bf50c7817f79ffbbfa187cced62b8a7b7d
+
+git commit -m "add 003"
+
 git branch -M main
 git remote add origin https://github.com/robsonvilar/Bitdoglab-microfone-biblioteca
 git push -u origin main
