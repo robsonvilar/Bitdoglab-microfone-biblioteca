@@ -1,13 +1,19 @@
 # Documentação da biblioteca do microfone da BitDogLab
 
-A presente biblioteca possui o objetivo de auxiliar
-o uso do sensor de som da placa bitdoglab. Ela possui 
-apenas 2 funções. Uma função que retorna o sinal de tensão do sensor 
-e outra que retorna uma média dos dados captados pelo sensor.
+A presente biblioteca tem como objetivo auxiliar em projetos
+de sistemas embarcados que utilizem o sensor de som da 
+plataforma de desenvolvimento BitDogLsb/Raspberry Pi Pico W,
+baseada no microcontrolador RP2040.
+
+O código da biblioteca foi desenvolvido na linguagem C, também com auxilio da extensão CMake, e o ambiente de desenvolvimento escolhido para a implementação foi o Visual Studio Code. Juntamente com a extensão Raspberry Pi Pico, disponível na ferramenta de desenvolvimento.
+
+Esta biblioteca abstrai os comandos de baixo nível e oferece um conjunto de 2 funções para
+leitura dos dados do sensor de som. Uma das funções retorna um valor de tensão em volts e
+a outra retorna uma média dos valores captados.
 
 - Abaixo encontra-se todo o código comentado.
 
-## Arquivo de testes main.c da biblioteca
+## Arquivo de testes da biblioteca denominado main.c
 
 ```c
 #include <stdio.h>         // Biblioteca padrão para entrada/saída (printf, scanf, etc.)
@@ -30,7 +36,7 @@ int main() {
 }
 ```
 
-## Arquivo de testes mic.c da biblioteca
+## Arquivo .c da biblioteca denominado mic.c
 
 ```c
 #include "mic.h"           // Inclui o cabeçalho do microfone (provavelmente define constantes e funções)
@@ -78,7 +84,7 @@ float mic_get_voltage() {
 
 ```
 
-## Arquivo de testes mic.h da biblioteca
+## Arquivo .h da biblioteca denominado mic.h
 
 ```c
 #ifndef MIC_H   // Verifica se MIC_H ainda não foi definido
